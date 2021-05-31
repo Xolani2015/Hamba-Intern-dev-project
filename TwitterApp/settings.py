@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders', 
-    'TwitterApp.app.TwitterappConfig'
-    'rest_framework'
+    'TweetsApp.apps.TweetsappConfig',
+    'rest_framework',
 ]
 
 CORS_ORIGIANAL_ALLOW_ALL = True
