@@ -37,9 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders', 
+    'TwitterApp.app.TwitterappConfig'
+    'rest_framework'
 ]
 
+CORS_ORIGIANAL_ALLOW_ALL = True
+
 MIDDLEWARE = [
+    'corsheaders.middleware.corsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
